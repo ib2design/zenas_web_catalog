@@ -12,7 +12,10 @@ my_cur = my_cnx.cursor()
 my_cur.execute ("SELECT  color_or_style from catalog_for_website")
 my_catalog = my_cur.fetchall()
 
-my_data_row = my_cur.fetchone()
+#put the data into a dataframe
+df = pandas.DataFrame(my_catalog)
+
+#my_data_row = my_cur.fetchone()
 
 streamlit.text ("Hellow from Snowflake:")
 streamlit.text(my_data_row)

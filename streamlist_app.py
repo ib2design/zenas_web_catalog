@@ -21,4 +21,7 @@ streamlit.write(df)
 #put first column into a list
 color_list = df[0].values.tolist()
 
+#pick list to pick the color
+option = streamlit.selectbox('Pick a Sweatsuit color or style:', list(color_list))
+
 

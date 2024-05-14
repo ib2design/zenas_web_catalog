@@ -18,3 +18,7 @@ df = pandas.DataFrame(my_catalog)
 #write dataframe to page for validation
 streamlit.write(df)
 
+#put first column into a list
+color_list = df[0].values.tolist()
+
+

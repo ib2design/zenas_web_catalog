@@ -15,7 +15,6 @@ my_catalog = my_cur.fetchall()
 #put the data into a dataframe
 df = pandas.DataFrame(my_catalog)
 
-#my_data_row = my_cur.fetchone()
+#write dataframe to page for validation
+streamlit.write(df)
 
-streamlit.text ("Hellow from Snowflake:")
-#streamlit.text(my_data_row)

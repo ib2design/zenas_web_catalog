@@ -18,4 +18,4 @@ df = pandas.DataFrame(my_catalog)
 #my_data_row = my_cur.fetchone()
 
 streamlit.text ("Hellow from Snowflake:")
-streamlit.text(my_data_row)
+#streamlit.text(my_data_row)
